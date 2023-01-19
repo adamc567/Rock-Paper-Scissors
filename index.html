@@ -5,12 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS Game</title>
-    <script src="./rock_paper_scissors.js"></script>
+    <script src="./rock_paper_scissors.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <script>
-        
-    </script>
-    
+    <div class="btns_div">
+        <h1>Choose your weapon!</h1>
+        <button class="weapon" id="rock">Rock!</button>
+        <button id="paper" class="weapon">Paper!</button>
+        <button id="scissors" class="weapon">Scissors!</button>
+    </div>
+    <div id="winAnnouncement" class="bottomDisplay">
+    <div class="yourChoice">
+    </div>
+    <div class="computerChoice">
+    </div>
+    <div class="scoreBoard">
+    <div class="computerScore">
+    </div>
+    <div class="playerScore">
+    </div>
+    <div class="round">
+    </div>
+    </div>
+    <div class="returnText"></div>
+    </div>
+    <button class="resetGame">Reset!</button>
 </body>
 </html>
