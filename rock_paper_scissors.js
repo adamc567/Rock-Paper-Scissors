@@ -65,7 +65,8 @@ if (computer === player) {
     computerScoreDisplay.innerHTML = `Computer score: ${computerScore}`;
     playerScoreDisplay.innerHTML = `Your score: ${playerScore}`;
 }
-document.getElementById('winAnnouncement').innerHTML = "Today is your day! </br> You win!";
+//Exists to style winnerAnnouncement only.
+// document.getElementById('winAnnouncement').innerHTML = "Today is your day! </br> You win!";
 
 function bestOfFive() {
     if (playerScore === 5) {
@@ -110,4 +111,6 @@ returnText.innerHTML = 'First to five wins!';
 
 let reset_btn = document.querySelector('.resetGame');
 reset_btn.addEventListener('click', () => resetGame());
+
+//adjust sizing to fit in browser.
 
