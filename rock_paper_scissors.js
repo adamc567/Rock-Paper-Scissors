@@ -70,16 +70,27 @@ if (computer === player) {
 
 function bestOfFive() {
     if (playerScore === 5) {
+        reset_btn.textContent='Play Again!'
+        document.querySelector(".winAnnouncement").setAttribute('id','winAnnouncement');
         document.getElementById('winAnnouncement').innerHTML = "Today is your day! </br> You win!";
     } else if (computerScore === 5){
-    document.getElementById('winAnnouncement').innerHTML = "Nope. Sorry bud. </br> Not today.";
+        reset_btn.textContent = 'Play Again!'
+        document.querySelector(".winAnnouncement").setAttribute('id','winAnnouncement');
+        document.getElementById('winAnnouncement').innerHTML = "Today is your day! </br> You win!";
   }
 }
-//remove transition when clicked again. or reset or whatever.
-//const animationReset = document.querySelector('.weapon');
-//animationReset.addEventListener('click', () =>)
+let animationReset = document.querySelector('.btns_div');
+animationReset.addEventListener('click', function(e) {
+e.preventDefault;
+animationReset.removeAttribute('id')
+void animationReset.offsetWidth
+animationReset.setAttribute('id', 'rpsChoice')
+}, false);
+// // animationReset.addEventListener('click', () => animationReset.setAttribute('id', 'rpsChoice'))
+
 
 const rock_btn = document.querySelector('#rock');
+// rock_btn.addEventListener('click', () => animationReset.setAttribute('id', 'rpsChoice'))
 rock_btn.addEventListener('click', () => playerChoice('rock'));
 rock_btn.addEventListener('click', () => bestOfFive());
 
