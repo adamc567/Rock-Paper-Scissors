@@ -65,8 +65,6 @@ if (computer === player) {
     computerScoreDisplay.innerHTML = `Computer score: ${computerScore}`;
     playerScoreDisplay.innerHTML = `Your score: ${playerScore}`;
 }
-//Exists to style winnerAnnouncement only.
-// document.getElementById('winAnnouncement').innerHTML = "Today is your day! </br> You win!";
 
 function bestOfFive() {
     if (playerScore === 5) {
@@ -86,11 +84,8 @@ animationReset.removeAttribute('id')
 void animationReset.offsetWidth
 animationReset.setAttribute('id', 'rpsChoice')
 }, false);
-// // animationReset.addEventListener('click', () => animationReset.setAttribute('id', 'rpsChoice'))
-
 
 const rock_btn = document.querySelector('#rock');
-// rock_btn.addEventListener('click', () => animationReset.setAttribute('id', 'rpsChoice'))
 rock_btn.addEventListener('click', () => playerChoice('rock'));
 rock_btn.addEventListener('click', () => bestOfFive());
 
@@ -122,6 +117,4 @@ returnText.innerHTML = 'First to five wins!';
 
 let reset_btn = document.querySelector('.resetGame');
 reset_btn.addEventListener('click', () => resetGame());
-
-//adjust sizing to fit in browser.
 
